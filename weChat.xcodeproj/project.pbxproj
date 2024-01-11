@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		7A3C54D92B4FA8640063951C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C54D82B4FA8640063951C /* AppDelegate.swift */; };
 		7A3C54DB2B4FA8640063951C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C54DA2B4FA8640063951C /* SceneDelegate.swift */; };
-		7A3C54DD2B4FA8640063951C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C54DC2B4FA8640063951C /* ViewController.swift */; };
-		7A3C54E02B4FA8640063951C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A3C54DE2B4FA8640063951C /* Main.storyboard */; };
 		7A3C54E22B4FA8650063951C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A3C54E12B4FA8650063951C /* Assets.xcassets */; };
 		7A3C54E52B4FA8650063951C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A3C54E32B4FA8650063951C /* LaunchScreen.storyboard */; };
 		7A3C54F02B4FA8650063951C /* weChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C54EF2B4FA8650063951C /* weChatTests.swift */; };
 		7A3C54FA2B4FA8650063951C /* weChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C54F92B4FA8650063951C /* weChatUITests.swift */; };
 		7A3C54FC2B4FA8650063951C /* weChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C54FB2B4FA8650063951C /* weChatUITestsLaunchTests.swift */; };
+		7A3C550B2B4FBF520063951C /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C55092B4FBF520063951C /* WelcomeVC.swift */; };
+		7A3C550C2B4FBF520063951C /* WelcomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A3C550A2B4FBF520063951C /* WelcomeVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,6 @@
 		7A3C54D52B4FA8640063951C /* weChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A3C54D82B4FA8640063951C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A3C54DA2B4FA8640063951C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7A3C54DC2B4FA8640063951C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7A3C54DF2B4FA8640063951C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7A3C54E12B4FA8650063951C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A3C54E42B4FA8650063951C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A3C54E62B4FA8650063951C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		7A3C54F52B4FA8650063951C /* weChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A3C54F92B4FA8650063951C /* weChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weChatUITests.swift; sourceTree = "<group>"; };
 		7A3C54FB2B4FA8650063951C /* weChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7A3C55092B4FBF520063951C /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		7A3C550A2B4FBF520063951C /* WelcomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +101,8 @@
 			children = (
 				7A3C54D82B4FA8640063951C /* AppDelegate.swift */,
 				7A3C54DA2B4FA8640063951C /* SceneDelegate.swift */,
-				7A3C54DC2B4FA8640063951C /* ViewController.swift */,
-				7A3C54DE2B4FA8640063951C /* Main.storyboard */,
 				7A3C54E12B4FA8650063951C /* Assets.xcassets */,
+				7A3C55082B4FBF230063951C /* ViewController */,
 				7A3C54E32B4FA8650063951C /* LaunchScreen.storyboard */,
 				7A3C54E62B4FA8650063951C /* Info.plist */,
 			);
@@ -125,6 +124,15 @@
 				7A3C54FB2B4FA8650063951C /* weChatUITestsLaunchTests.swift */,
 			);
 			path = weChatUITests;
+			sourceTree = "<group>";
+		};
+		7A3C55082B4FBF230063951C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7A3C55092B4FBF520063951C /* WelcomeVC.swift */,
+				7A3C550A2B4FBF520063951C /* WelcomeVC.xib */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +240,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A3C54E52B4FA8650063951C /* LaunchScreen.storyboard in Resources */,
+				7A3C550C2B4FBF520063951C /* WelcomeVC.xib in Resources */,
 				7A3C54E22B4FA8650063951C /* Assets.xcassets in Resources */,
-				7A3C54E02B4FA8640063951C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A3C54DD2B4FA8640063951C /* ViewController.swift in Sources */,
+				7A3C550B2B4FBF520063951C /* WelcomeVC.swift in Sources */,
 				7A3C54D92B4FA8640063951C /* AppDelegate.swift in Sources */,
 				7A3C54DB2B4FA8640063951C /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +305,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7A3C54DE2B4FA8640063951C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7A3C54DF2B4FA8640063951C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7A3C54E32B4FA8650063951C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,7 +446,6 @@
 				INFOPLIST_FILE = weChat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -473,7 +472,6 @@
 				INFOPLIST_FILE = weChat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
